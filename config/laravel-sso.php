@@ -31,6 +31,9 @@ return [
     'brokersTable' => 'brokers',
     'brokerUserTable' => 'broker_user',
 
+    // What is the name of the column that users use to login with (generally 'username' or 'email)
+    'usernameField' => env('SSO_USERNAME_FIELD', 'username'),
+
     // Logged in user fields sent to brokers.
     'userFields' => [
         // Return array field name => database column name
